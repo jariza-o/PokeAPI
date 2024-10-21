@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div style="display: none;">
+        <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+            <header class="header text-center mb-4">
+                <h1>Welcome to PokeApi</h1>
+            </header>
+            <form id="loginForm">
+                <div class="mb-3">
+                <label for="email" class="form-label">Mail</label>
+                <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+                </div>
+                <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                </div>
+                <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <div class="text-center p-1">or</div>
+                <a href="#" style="margin-left: 4px; margin-top: 4px;">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div style="display: block;">
+        <header>
+            <h1>Welcome to PokeApi</h1>
+        </header>
+        <div>
+            <h2>Input</h2>
+            <ul>
+                <li>
+                    Pokemon Name:
+                        <input type="text" id="pokemonName" name="pokemonName" placeholder="Enter Pokémon name">
+                </li>
+                <li>
+                    Pokemon Type:
+                    <select id="pokemonType" name="pokemonType">
+                        <option value="normal">Normal</option>
+                        <option value="poison">Poison</option>
+                        <option value="bug">Bug</option>
+                        <option value="fire">Fire</option>
+                        <option value="electric">Electric</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="fighting">Fighting</option>
+                        <option value="ground">Ground</option>
+                        <option value="ghost">Ghost</option>
+                        <option value="water">Water</option>
+                        <option value="psychic">Psychic</option>
+                        <option value="dark">Dark</option>
+                        <option value="rock">Rock</option>
+                        <option value="steel">Steel</option>
+                        <option value="grass">Grass</option>
+                        <option value="ice">Ice</option>
+                        <option value="fairy">Fairy</option>
+                    </select>
+                </li>
+                <li>
+                    Accessory:
+                        <input type="text" id="accessory" name="accessory" placeholder="Enter an Accessory">
+                </li>
+                <li>
+                    Prompt:
+                        <input type="text" id="prompt" name="prompt" placeholder="Enter a Prompt">
+                </li>
+            </ul>
+            <button type="submit" class="btn btn-primary bobobo">Submit</button>
+            <div id="generatedPrompt">
+
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/ai.js"></script>
+
+</body>
+</html>
