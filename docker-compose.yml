@@ -4,18 +4,11 @@ services:
     build: ./web
     env_file: .env
     volumes:
-      - react:/PokeAPI
       - backend:/backend
     ports:
-      - "3000:3000"
+      - "8000:8000"
 
 volumes:
-   react:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: ./web/service/pokeapi
    backend:
     driver: local
     driver_opts:
